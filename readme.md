@@ -1,3 +1,7 @@
+#About Me
+
+## I am Ayush Aman 1st Sem B-Tech CS Student Pursuing from Rungta International Skill University and This is my first project assigned to me by my Python Faculty "Rishab Vishwakarma" Sir who is great teacher 😀 and his behavior is very polite and he is down to earth and My Project Name Is Railway Reservation Analyzer which main perspective is to analyze the data of Railways tickets details and its revenue and I have use some of the libraries to make it more accurate and interactive like Pandas and Matplotlib.
+
 # Railway Reservation Analyzer
 
 ## About the project
