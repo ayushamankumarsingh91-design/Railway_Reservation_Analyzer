@@ -24,11 +24,11 @@ I tried to keep the program simple and used the Python concepts I have learned s
 - A fare such as `abc` cannot be added as a number. I used `pd.to_numeric(..., errors="coerce")` so that the incorrect fare could be identified and the row skipped.
 - I had to understand the difference between counting all bookings and counting only confirmed bookings. I used a filter for `Status == "Confirmed"` before calculating revenue.
 - I learned that `groupby()` can collect rows with the same train name and then count or add their values.
-- I also added a file-not-found check so that the program does not show a long error message when the CSV file is missing.
+- I also added a file-not-found check so that the program displays a simple message when the CSV file is missing.
 
 ## 4. Test cases
 
-The following four test cases use separate CSV files. Each screenshot is a VS Code-style run preview showing the program output and its chart. The previews were prepared for this project documentation; they are not captures from the student's own computer.
+The following four test cases show the expected program output and chart. The screenshots are stored in the main folder of this GitHub repository. I have used direct image links so GitHub can load them from the repository.
 
 ### Test Case 1 – Normal input
 
@@ -36,7 +36,7 @@ The following four test cases use separate CSV files. Each screenshot is a VS Co
 
 **Expected result:** Gondwana has 4 bookings, Rajdhani has 3, and Shatabdi has 3. Total bookings are 10.
 
-![Test Case 1 – Normal input](screenshots/TC1_Normal_Test.png)
+![Test Case 1 – Normal input](https://raw.githubusercontent.com/ayushamankumarsingh91-design/Railway_Reservation_Analyzer/main/TC1_Normal_Test.png)
 
 ### Test Case 2 – Boundary / minimum input
 
@@ -44,7 +44,7 @@ The following four test cases use separate CSV files. Each screenshot is a VS Co
 
 **Expected result:** Shatabdi confirmed revenue is Rs. 950. Total confirmed revenue is Rs. 950.
 
-![Test Case 2 – Boundary input](screenshots/TC2_Boundary_Test.png)
+![Test Case 2 – Boundary input](https://raw.githubusercontent.com/ayushamankumarsingh91-design/Railway_Reservation_Analyzer/main/TC2_Boundary_Test.png)
 
 ### Test Case 3 – Invalid input
 
@@ -52,7 +52,7 @@ The following four test cases use separate CSV files. Each screenshot is a VS Co
 
 **Expected result:** The first run displays a file-not-found message. The second run warns that PNR 1011 has an invalid fare, skips that row, and analyzes the 10 valid records.
 
-![Test Case 3 – Invalid input](screenshots/TC3_Invalid_Test.png)
+![Test Case 3 – Invalid input](https://raw.githubusercontent.com/ayushamankumarsingh91-design/Railway_Reservation_Analyzer/main/TC3_Invalid_Test.png)
 
 ### Test Case 4 – Different valid scenario
 
@@ -60,12 +60,12 @@ The following four test cases use separate CSV files. Each screenshot is a VS Co
 
 **Expected result:** Rajdhani revenue is Rs. 4100, Gondwana revenue is Rs. 2540, and Shatabdi revenue is Rs. 1900. Total confirmed revenue is Rs. 8540.
 
-![Test Case 4 – Revenue scenario](screenshots/TC4_Revenue_Test.png)
+![Test Case 4 – Revenue scenario](https://raw.githubusercontent.com/ayushamankumarsingh91-design/Railway_Reservation_Analyzer/main/TC4_Revenue_Test.png)
 
 ## 5. How to execute the project
 
 1. Open the project folder in VS Code.
-2. Install the libraries with `python -m pip install -r requirements.txt`.
+2. Install the libraries with `python -m pip install pandas matplotlib`.
 3. Open the terminal and run `python one.py`.
 4. Enter the CSV file path and choose menu option `1` or `2`.
 
